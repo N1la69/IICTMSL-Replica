@@ -1,0 +1,525 @@
+/****************************Main**************************************/
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@1200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+	--color1: rgb(32, 3, 3);
+	--color2: #f7e7e7;
+	background-image: linear-gradient(-45deg, rgb(236, 236, 183), rgb(230, 209, 209),rgb(160, 228, 233));
+}
+.logo{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo div{
+	position: relative;
+	width: 600px;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 0 25px;
+	background: transparent;
+}
+h2{
+    position: relative;
+    text-align: center;
+    font-weight: 1000;
+	font-family: 'Bitter', sans-serif;
+    color: transparent;
+    /*-webkit-text-stroke: 1px #240299;*/
+    background-image: linear-gradient(#240299,#cc2bec);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: -525px 0;
+    animation: backcolor 5s linear infinite alternate;
+    animation-delay: 1.5s;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@media screen and (max-width: 1180px){
+	.logo{
+		padding-top: 170px;
+		display: block;
+		margin-bottom: 80px;
+	}
+	.logo .box1{
+		min-height: 200px;
+		width: 85%;
+		margin: 0 auto 40px;
+		display: block;
+	}
+	.logo .box1 img{
+		width: 85%;
+		display: block;
+		position: relative;
+		margin: 0 auto 40px;
+	}
+    .logo .box2{
+		min-height: 200px;
+		width: 90%;
+		margin: 0 auto 40px;
+		display: block;
+	}
+	.logo .box2 img{
+		width: 90%;
+		display: block;
+		position: relative;
+		margin: 0 auto 40px;
+	}
+}
+@media screen and (max-width: 620px){
+	.logo .box1{
+		width: 90%;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.logo .box1 img{
+		width: 100%;
+	}
+    .logo .box2{
+		width: 90%;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.logo .box2 img{
+		margin-top: 10px;
+		width: 90%;
+		height: 90%;
+	}
+}
+@media screen and (max-width: 620px){
+	.logo div #ban{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 460px){
+	.logo.box1 img{
+		position: relative;
+		width: 260px;
+		height: 175px;
+		margin: 0;
+	}
+	.logo.box2 img{
+		position: relative;
+		width: 45%;
+		height: 45%;
+		margin: 0;
+	}
+}
+/******************************************************************/
+/*****************************Loader*************************************/
+.load{
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #240299;
+	z-index: 99999;
+}
+.loader{
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: animate 0.5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+.loader span:nth-child(1){
+    filter: blur(5px);
+}
+.loader span:nth-child(2){
+    filter: blur(10px);
+}
+.loader span:nth-child(3){
+    filter: blur(25px);
+}
+.loader span:nth-child(4){
+    filter: blur(50px);
+}
+.loader:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #240299;
+    border-radius: 50%;
+}
+.content{
+    margin: 0;
+    padding: 0;
+}
+/******************************************************************/
+/***************************About us***************************************/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 100%;
+    margin: 100px 0;
+}
+.container div{
+    position: relative;
+    width: 650px;
+}
+.container.team{
+    position: relative;
+    margin-top: 150px;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.container .content h1, .container.team .content h1{
+	font-family: 'Righteous', cursive;
+}
+#description{
+	font-family: 'Assistant', sans-serif;
+	font-size: 19px;
+}
+.containerWave{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1170px){
+	.container{
+		position: relative;
+		display: block;
+		margin-top: 50px;
+	}
+	.container .image{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	.container .content{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		margin-top: 60px;
+		text-align: left;
+	}
+	.container .content h1{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 620px){
+	.container .image{
+		position: relative;
+		width: 90%;
+		display: block;
+		margin: 0 auto 50px;
+	}
+	.container div.image img {
+		max-width: 80%;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	.container div.content{
+		width: 90%;
+	}
+	.container .content h1{
+		font-size: 24px;
+	}
+	.container div.content p{
+		font-size: 16px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 460px){
+	#main > div.container.team{
+		margin-top: 50px;
+	}
+	.container div.image{
+		position: relative;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container div.image img{
+		position: relative;
+		width: 260px;
+		height: 200px;
+		display: block;
+		margin: 0;
+	}
+	.container div.content p{
+		font-size: 12px;
+		text-align: center;
+	}
+	.container.team.image img{
+        position: relative;
+		width: 260px;
+		height: 200px;
+		display: block;
+		margin: 0;
+	}
+	
+    #main > div.container.team > div.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+	.container.team h1{
+		text-align: center;
+	}
+	.container.team p{
+		font-size: 12px;
+		text-align: left;
+		
+	} 
+	.containerWave{
+		margin: 10px 0;
+	}
+}
+/******************************************************************/
+/*****************************Navbar*************************************/
+.nav-bar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	position: relative;
+	background-color: var(--color2);
+	padding: 12px 20px;
+	position: fixed;
+	z-index: 1;
+	box-shadow: #464545;
+}
+nav .active{
+	background-color: rgb(116, 139, 240);
+	color: var(--color2);
+}
+.logo1 img{
+	width: 55px;
+}
+.menu{
+	display: flex;
+}
+.menu li{
+	padding-left: 30px;
+}
+.menu li a{
+	display: inline-block;
+	text-decoration: none;
+	color: var(--color1);
+	text-align: center;
+	transition: 0.15s ease-in-out;
+	position: relative;
+	font-family: 'Righteous', cursive;
+}
+.menu li a:hover{
+	color: rgb(9, 12, 221);
+	box-shadow: 0 0 0.15em rgb(9, 12, 221), 0 0 0.1em rgb(9, 12, 221);
+	border-radius: 4.5px;
+	letter-spacing: .25em;
+	text-align: center;
+	font-weight: 100px;
+}
+
+.menu li a:hover:after{
+	width: 100%;
+}
+.open-menu, .close-menu{
+	position: absolute;
+	color: var(--color1);
+	cursor: pointer;
+	font-size: 1.5rem;
+	display: none;
+}
+.open-menu{
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+.close-menu{
+	top: 20px;
+	right: 20px;
+}
+#check{
+	display: none;
+}
+@media screen and (max-width: 1035px){
+	.menu{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 1;
+		background-color: var(--color2);
+		transition: all 0.2s ease-in-out;
+	}
+	.menu li{
+		margin-top: 35px;
+	}
+	.menu li a{
+		padding: 5px;
+	}
+	.open-menu, .close-menu{
+		display: block;
+	}
+	#check:checked ~ .menu{
+		right: 0;
+	}
+}
+/******************************************************************/
+/****************************Footer**************************************/
+footer{
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+.footerIcon{
+    color: aliceblue;
+    letter-spacing: 8.5px;
+}
+/******************************************************************/
+/****************************Counter**************************************/
+.counterImg{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	padding: 0 50px;
+	margin-bottom: 30px;
+}
+.counterImg img{
+	position: relative;
+	width: 90%;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (max-width: 700px){
+	.counterImg{
+		padding: 0;
+		margin-top: -50px;
+	}
+	.counterImg img{
+		width: 95%;
+	}
+}
+/******************************************************************/
+/***************************Buttons***************************************/
+a#knowMore1{
+    background: transparent;
+	color: var(--clr);
+	border: var(--clr) 1px solid;
+	border-radius: 0.25em;
+	text-decoration: none;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: 300;
+	padding: 10px 30px;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+a#knowMore1:hover{
+	background: var(--clr);
+	letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+	color: aliceblue;
+	border-radius: 50px;
+}
+#knowMore1:before{
+	content: '';
+	inset: 2px;
+	background: #464545;
+}
+a#knowMore1 span{
+	position: relative;
+	z-index: 1;
+}
+a#knowMore2{
+	background: transparent;
+	color: var(--clr1);
+	border: var(--clr1) 1px solid;
+	border-radius: 0.25em;
+	text-decoration: none;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: 300;
+	padding: 10px 30px;
+	transition: 0.5s;
+	box-sizing: border-box;
+	text-shadow: 0 0 0.25em var(--clr1);
+	box-shadow: inset 0 0 0.2em 0 var(--clr1),0 0 .5em 0 var(--clr1);
+}
+a#knowMore2:hover{
+	background: var(--clr1);
+	color: #fff;
+	box-shadow: 0 0 2em 0.5em var(--clr1);
+	letter-spacing: 0.25em;
+}
+@media screen and (max-width: 500px){
+	#knowMore1,#knowMore2{
+		zoom: 0.8;
+		font-size: 14px;
+		margin: 20px auto 0; 
+		display: block;
+		letter-spacing: 3px;
+		align-self: center;
+		text-align: center;
+	}
+}
+/******************************************************************/

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIC TMSL - Contact Page</title>
+  <link href="https://www.iictmsl.com/image/IIC.png" rel="icon" />
+  <link href="https://www.iictmsl.com/image/IIC.png" rel="apple-touch-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Stylesheets\ContactUs_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!--Loader-->
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!--NavbarSetUp-->
+  <nav>
+    <ul class="nav-bar">
+      <li class="logo1"><a href="#"><img src="https://www.iictmsl.com/image/IIC.png" alt="logo"></a></li>
+      <input type="checkbox" id="check">
+      <span class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">TEAM</a></li>
+        <li><a href="https://envisage.live/" target="_blank" rel="noopener">ENVISAGE</a></li>
+        <li><a href="#">ACTIVITY</a></li>
+        <li><a href="Startups.html">OUR STARTUP</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">FACULTY</a></li>
+        <li><a href="#">ALUMNI</a></li>
+        <li><a href="#" class="active">CONTACT</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center" style="color: #2525c9; font-weight: bold; font-style: italic">
+              CONTACT US
+            </h1>
+            <div>
+              <img class="img-fluid"
+                src="https://bharatcorporation.co.in/wp-content/uploads/2021/05/contact-header-mobile.png" alt="pic" />
+            </div>
+            <div class="text-secondary text-center">
+              <h3 style="font-family: 'Assistant', sans-serif;">TECHNO INDIA: EM-4/1,Sector-V ,Salt Lake</h3>
+              <h4>Kolkata-700091,West Bengal</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card formcard h-100">
+          <div class="card-body col-12">
+            <div class="form-outline">
+              <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="NAME" />
+            </div>
+          </div>
+          <div class="card-body col-12">
+            <div class="form-outline">
+              <input type="text" id="formControlLg1" class="form-control form-control-lg" placeholder="EMAIL-ID" />
+            </div>
+          </div>
+          <div class="card-body col-12">
+            <div class="form-outline">
+              <textarea class="form-control" id="textAreaExample" rows="4" placeholder="MESSAGE"
+                style="font-style: italic; font-size: larger"></textarea>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn" style="
+                  border-radius: 15px;
+                  border-bottom: 55%;
+                  background-color: rgb(255, 106, 0);
+                  font-size: 150%;
+                  font-weight: bold;
+                  color: #e2dede;
+                ">
+              Submit !
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Necessary Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var load = document.querySelector(".loader");
+    window.addEventListener('load', function () {
+      $('.loader').fadeOut();
+    });
+    try {
+      AOS.init({
+        duration: 1500,
+      });
+    }
+    catch {
+      console.log("Connection Error");
+    }
+  </script>
+
+  <!--Footer-->
+  <footer>
+    <p>Contact Us -
+      <a target="_blank" href="https://www.facebook.com/iictmsl/" rel="noopener" title="none"><i
+          class="footerIcon fab fa-facebook-square "></i></a>
+      <a target="_blank" href="https://twitter.com/iictmsl" rel="noopener" title="none"><i
+          class="footerIcon fab fa-twitter "></i></a>
+      <a target="_blank" href="https://www.instagram.com/iictmsl/" rel="noopener" title="none"><i
+          class="footerIcon fab fa-instagram "></i></a>
+      <a target="_blank" href="https://www.linkedin.com/company/iictmsl/" rel="noopener" title="none"><i
+          class="footerIcon fab fa-linkedin-in "></i></a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
