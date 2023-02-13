@@ -13,7 +13,7 @@
     padding-bottom: 15px;
 }
 body{
-	background-image: url("https://github.com/N1la69/IICTMSL-Replica/blob/master/Res/startupBg.jpeg");
+	background-image: url("/Res/startupBg.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
