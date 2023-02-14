@@ -10,10 +10,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
   <link rel="stylesheet" href="Stylesheets\Team_style.css">
 </head>
 
 <body>
+
+  <!--Loader-->
+  <div class="center">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+  </div>
 
   <!--NavbarSetUp-->
   <nav>
@@ -37,7 +47,7 @@
     </ul>
   </nav>
 
-  <div class="heading" >
+  <div class="heading">
     <h2>Administrative Heads</h2>
   </div>
   <div class="container1">
@@ -191,6 +201,25 @@
           class="footerIcon fab fa-linkedin-in "></i></a>
     </p>
   </footer>
+
+  <!--Necessary Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var load = document.querySelector(".center");
+        window.addEventListener('load', function () {
+            $('.center').fadeOut();
+        });
+        try {
+            AOS.init({
+                duration: 1500,
+            });
+        }
+        catch {
+            console.log("Connection Error");
+        }
+    </script>
 
 </body>
 
