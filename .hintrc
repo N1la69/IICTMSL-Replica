@@ -14,7 +14,8 @@
       "default",
       {
         "ignore": [
-          "zoom"
+          "zoom",
+          "user-select"
         ]
       }
     ],
