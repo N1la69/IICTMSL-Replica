@@ -251,6 +251,12 @@ h1 em {
     background-color: #b80000;
 }
 
+@media screen and (max-width: 550) {
+    .blockquote p, .blockquote-footer cite{
+        display: none;
+    }
+}
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
     position: relative;
