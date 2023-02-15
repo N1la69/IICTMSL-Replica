@@ -14,6 +14,10 @@ html {
     font-family: Arial;
 }
 
+#body {
+    background-image: repeating-linear-gradient(-45deg, rgba(39, 104, 245, .95), rgba(39, 104, 245, .95) 10px, rgb(144, 250, 250) 10px, rgb(144, 250, 250) 20px);
+}
+
 /*****************************Navbar*************************************/
 .nav-bar {
     width: 100%;
@@ -209,27 +213,25 @@ nav .active {
 .menu__link {
     display: inline-block;
     text-decoration: none;
-    border: 2px solid #263238;
-    background-color: #ccc;
-    color: #ee4b2b;
-    font-weight: 500;
-    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
     line-height: 20px;
     position: relative;
-    padding: 20px 50px;
     box-sizing: border-box;
     margin-top: 70px;
-    user-select: none;
     overflow: hidden;
-    border-radius: 50px;
     justify-content: center;
     align-self: center;
 }
 
 .menu__link :hover {
-    background-color: yellow;
-    color: black;
-    font-size: larger;
+    background-color: #3e8e41;
+    transform: translateY(-3px);
 }
 
 #menu-bar {
