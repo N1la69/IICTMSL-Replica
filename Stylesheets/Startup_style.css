@@ -138,6 +138,10 @@ body {
 	color: aliceblue;
 }
 
+.heading_details p{
+	font-size: 20px;
+}
+
 @media screen and (max-width: 620px) {
 	.card {
 		margin-bottom: 10px;
@@ -145,7 +149,12 @@ body {
 	}
 
 	.heading_details p {
-		font-size: 10px;
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.heading_details p {
+		font-size: 15px;
 	}
 }
 

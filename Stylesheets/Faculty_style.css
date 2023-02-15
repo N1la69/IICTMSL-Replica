@@ -80,7 +80,7 @@
     position: relative;
     background-color: var(--color2);
     padding: 12px 20px;
-    position: fixed;
+    position: relative;
     z-index: 1;
     box-shadow: #464545;
 }
@@ -188,70 +188,30 @@ nav .active {
 
 
 /*****************************Content*************************************/
-@-webkit-keyframes swing {
-    15% {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-
-    30% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-
-    50% {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-
-    65% {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-
-    80% {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+.heading{
+    background: -webkit-linear-gradient(
+    123deg,
+    hsl(238.96, 100%, 45.1%) 0%,
+    hsl(248.46, 77.66%, 49.26%) 13.6%,
+    hsl(253.63, 69.01%, 50.16%) 24.2%,
+    hsl(258.93, 62.27%, 50.44%) 32.3%,
+    hsl(264.95, 55.23%, 50.33%) 38.3%,
+    hsl(272.21, 48.16%, 49.9%) 42.8%,
+    hsl(281.52, 41.9%, 49.2%) 46.1%,
+    hsl(294.3, 35.56%, 48.24%) 48.8%,
+    hsl(311.01, 33.42%, 50.08%) 51.2%,
+    hsl(326.19, 38.02%, 53.3%) 53.9%,
+    hsl(339.93, 42.88%, 56.27%) 57.2%,
+    hsl(352.73, 47.97%, 59.01%) 61.7%,
+    hsl(4.7, 55.3%, 59.77%) 67.7%,
+    hsl(13.64, 64.8%, 57.54%) 75.8%,
+    hsl(20.73, 73.29%, 54.25%) 86.4%,
+    hsl(30, 100%, 45.1%) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-@keyframes swing {
-    15% {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-
-    30% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-
-    50% {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-
-    65% {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-
-    80% {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
 .card:hover {
     box-shadow: inset 0 0 0 5px #eeff00;
     -webkit-animation: swing 1s ease;
@@ -261,18 +221,8 @@ nav .active {
 
 }
 
-.heading {
-    background: linear-gradient(to right, #f32170,
-            #ff6b08, #cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    ;
-}
 
-.director p{
-    position: relative;
-    text-align: center;
-}
+
 /******************************************************************/
 
 /****************************Footer**************************************/
